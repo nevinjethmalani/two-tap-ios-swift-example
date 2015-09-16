@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="StartViewController" customModule="Two_Tap_iOS_Swift_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvH-g0-a8n">
+                                <rect key="frame" x="275" y="285" width="50" height="30"/>
+                                <state key="normal" title="Tap me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6VD-dU-X9f" kind="presentation" identifier="checkout" id="sAT-Bo-LDR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="bvH-g0-a8n" secondAttribute="centerX" id="HIM-q8-3du"/>
+                            <constraint firstAttribute="centerY" secondItem="bvH-g0-a8n" secondAttribute="centerY" id="g48-KK-f2x"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="YHR-Od-daS">
+            <objects>
+                <viewController id="6VD-dU-X9f" customClass="BuyViewController" customModule="Two_Tap_iOS_Swift_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mv3-0x-PJx"/>
+                        <viewControllerLayoutGuide type="bottom" id="LVA-E7-3Ma"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w5U-ra-eBz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0N-Fn-yQC">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="6VD-dU-X9f" id="g0i-f6-TRq"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="2os-XV-0Sf">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2os-XV-0Sf" firstAttribute="centerY" secondItem="C0N-Fn-yQC" secondAttribute="centerY" id="0gR-sv-Zo8"/>
+                            <constraint firstItem="C0N-Fn-yQC" firstAttribute="top" secondItem="mv3-0x-PJx" secondAttribute="bottom" constant="-20" id="4As-GV-ZCM"/>
+                            <constraint firstItem="2os-XV-0Sf" firstAttribute="centerX" secondItem="C0N-Fn-yQC" secondAttribute="centerX" id="adG-n2-KUi"/>
+                            <constraint firstItem="C0N-Fn-yQC" firstAttribute="leading" secondItem="w5U-ra-eBz" secondAttribute="leadingMargin" constant="-16" id="g6v-mI-8jS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C0N-Fn-yQC" secondAttribute="trailing" constant="-16" id="igz-KJ-HpN"/>
+                            <constraint firstItem="LVA-E7-3Ma" firstAttribute="top" secondItem="C0N-Fn-yQC" secondAttribute="bottom" id="pDZ-2z-XEs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="2os-XV-0Sf" id="4Bs-ig-nhA"/>
+                        <outlet property="ttWebView" destination="C0N-Fn-yQC" id="1gp-h5-uJF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXn-9B-qmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="357"/>
+        </scene>
+    </scenes>
+</document>

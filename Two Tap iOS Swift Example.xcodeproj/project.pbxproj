@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF1ACE391BA91E74007C21EE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ACE381BA91E74007C21EE /* SwiftyJSON.swift */; };
+		CF382B921BA9132C006CD055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF382B911BA9132C006CD055 /* AppDelegate.swift */; };
+		CF382B941BA9132C006CD055 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF382B931BA9132C006CD055 /* StartViewController.swift */; };
+		CF382B971BA9132C006CD055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF382B951BA9132C006CD055 /* Main.storyboard */; };
+		CF382B991BA9132C006CD055 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF382B981BA9132C006CD055 /* Images.xcassets */; };
+		CF382B9C1BA9132C006CD055 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF382B9A1BA9132C006CD055 /* LaunchScreen.xib */; };
+		CF382BA81BA9132C006CD055 /* Two_Tap_iOS_Swift_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF382BA71BA9132C006CD055 /* Two_Tap_iOS_Swift_ExampleTests.swift */; };
+		CF382BB21BA91389006CD055 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF382BB11BA91389006CD055 /* BuyViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF382BA21BA9132C006CD055 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF382B841BA9132C006CD055 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF382B8B1BA9132C006CD055;
+			remoteInfo = "Two Tap iOS Swift Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF1ACE381BA91E74007C21EE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		CF382B8C1BA9132C006CD055 /* Two Tap iOS Swift Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Two Tap iOS Swift Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF382B901BA9132C006CD055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF382B911BA9132C006CD055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF382B931BA9132C006CD055 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		CF382B961BA9132C006CD055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF382B981BA9132C006CD055 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF382B9B1BA9132C006CD055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CF382BA11BA9132C006CD055 /* Two Tap iOS Swift ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Two Tap iOS Swift ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF382BA61BA9132C006CD055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF382BA71BA9132C006CD055 /* Two_Tap_iOS_Swift_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Two_Tap_iOS_Swift_ExampleTests.swift; sourceTree = "<group>"; };
+		CF382BB11BA91389006CD055 /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF382B891BA9132C006CD055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF382B9E1BA9132C006CD055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF382B831BA9132C006CD055 = {
+			isa = PBXGroup;
+			children = (
+				CF382B8E1BA9132C006CD055 /* Two Tap iOS Swift Example */,
+				CF382BA41BA9132C006CD055 /* Two Tap iOS Swift ExampleTests */,
+				CF382B8D1BA9132C006CD055 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF382B8D1BA9132C006CD055 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF382B8C1BA9132C006CD055 /* Two Tap iOS Swift Example.app */,
+				CF382BA11BA9132C006CD055 /* Two Tap iOS Swift ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF382B8E1BA9132C006CD055 /* Two Tap iOS Swift Example */ = {
+			isa = PBXGroup;
+			children = (
+				CF382B911BA9132C006CD055 /* AppDelegate.swift */,
+				CF382B931BA9132C006CD055 /* StartViewController.swift */,
+				CF382BB11BA91389006CD055 /* BuyViewController.swift */,
+				CF382B951BA9132C006CD055 /* Main.storyboard */,
+				CF382B981BA9132C006CD055 /* Images.xcassets */,
+				CF382B9A1BA9132C006CD055 /* LaunchScreen.xib */,
+				CF382B8F1BA9132C006CD055 /* Supporting Files */,
+			);
+			path = "Two Tap iOS Swift Example";
+			sourceTree = "<group>";
+		};
+		CF382B8F1BA9132C006CD055 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF1ACE381BA91E74007C21EE /* SwiftyJSON.swift */,
+				CF382B901BA9132C006CD055 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF382BA41BA9132C006CD055 /* Two Tap iOS Swift ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF382BA71BA9132C006CD055 /* Two_Tap_iOS_Swift_ExampleTests.swift */,
+				CF382BA51BA9132C006CD055 /* Supporting Files */,
+			);
+			path = "Two Tap iOS Swift ExampleTests";
+			sourceTree = "<group>";
+		};
+		CF382BA51BA9132C006CD055 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF382BA61BA9132C006CD055 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF382B8B1BA9132C006CD055 /* Two Tap iOS Swift Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF382BAB1BA9132D006CD055 /* Build configuration list for PBXNativeTarget "Two Tap iOS Swift Example" */;
+			buildPhases = (
+				CF382B881BA9132C006CD055 /* Sources */,
+				CF382B891BA9132C006CD055 /* Frameworks */,
+				CF382B8A1BA9132C006CD055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Two Tap iOS Swift Example";
+			productName = "Two Tap iOS Swift Example";
+			productReference = CF382B8C1BA9132C006CD055 /* Two Tap iOS Swift Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF382BA01BA9132C006CD055 /* Two Tap iOS Swift ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF382BAE1BA9132D006CD055 /* Build configuration list for PBXNativeTarget "Two Tap iOS Swift ExampleTests" */;
+			buildPhases = (
+				CF382B9D1BA9132C006CD055 /* Sources */,
+				CF382B9E1BA9132C006CD055 /* Frameworks */,
+				CF382B9F1BA9132C006CD055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF382BA31BA9132C006CD055 /* PBXTargetDependency */,
+			);
+			name = "Two Tap iOS Swift ExampleTests";
+			productName = "Two Tap iOS Swift ExampleTests";
+			productReference = CF382BA11BA9132C006CD055 /* Two Tap iOS Swift ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF382B841BA9132C006CD055 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "amber.io, Inc";
+				TargetAttributes = {
+					CF382B8B1BA9132C006CD055 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CF382BA01BA9132C006CD055 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CF382B8B1BA9132C006CD055;
+					};
+				};
+			};
+			buildConfigurationList = CF382B871BA9132C006CD055 /* Build configuration list for PBXProject "Two Tap iOS Swift Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF382B831BA9132C006CD055;
+			productRefGroup = CF382B8D1BA9132C006CD055 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF382B8B1BA9132C006CD055 /* Two Tap iOS Swift Example */,
+				CF382BA01BA9132C006CD055 /* Two Tap iOS Swift ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF382B8A1BA9132C006CD055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF382B971BA9132C006CD055 /* Main.storyboard in Resources */,
+				CF382B9C1BA9132C006CD055 /* LaunchScreen.xib in Resources */,
+				CF382B991BA9132C006CD055 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF382B9F1BA9132C006CD055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF382B881BA9132C006CD055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF382B941BA9132C006CD055 /* StartViewController.swift in Sources */,
+				CF382B921BA9132C006CD055 /* AppDelegate.swift in Sources */,
+				CF382BB21BA91389006CD055 /* BuyViewController.swift in Sources */,
+				CF1ACE391BA91E74007C21EE /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF382B9D1BA9132C006CD055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF382BA81BA9132C006CD055 /* Two_Tap_iOS_Swift_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF382BA31BA9132C006CD055 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF382B8B1BA9132C006CD055 /* Two Tap iOS Swift Example */;
+			targetProxy = CF382BA21BA9132C006CD055 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF382B951BA9132C006CD055 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF382B961BA9132C006CD055 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF382B9A1BA9132C006CD055 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF382B9B1BA9132C006CD055 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF382BA91BA9132C006CD055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF382BAA1BA9132C006CD055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF382BAC1BA9132D006CD055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Two Tap iOS Swift Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF382BAD1BA9132D006CD055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Two Tap iOS Swift Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF382BAF1BA9132D006CD055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Two Tap iOS Swift ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Two Tap iOS Swift Example.app/Two Tap iOS Swift Example";
+			};
+			name = Debug;
+		};
+		CF382BB01BA9132D006CD055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Two Tap iOS Swift ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Two Tap iOS Swift Example.app/Two Tap iOS Swift Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF382B871BA9132C006CD055 /* Build configuration list for PBXProject "Two Tap iOS Swift Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF382BA91BA9132C006CD055 /* Debug */,
+				CF382BAA1BA9132C006CD055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF382BAB1BA9132D006CD055 /* Build configuration list for PBXNativeTarget "Two Tap iOS Swift Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF382BAC1BA9132D006CD055 /* Debug */,
+				CF382BAD1BA9132D006CD055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF382BAE1BA9132D006CD055 /* Build configuration list for PBXNativeTarget "Two Tap iOS Swift ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF382BAF1BA9132D006CD055 /* Debug */,
+				CF382BB01BA9132D006CD055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF382B841BA9132C006CD055 /* Project object */;
+}
