@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 amber.io, Inc. All rights reserved.
 //
 
+import Alamofire
 import UIKit
 
 class BuyViewController: UIViewController, UIWebViewDelegate {
@@ -21,17 +22,39 @@ class BuyViewController: UIViewController, UIWebViewDelegate {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    let encodedProductURL = self.productURL!.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())
 
-    let customCSSURL = "http://localhost:2500/stylesheets/integration_twotap_ios.css"
-    let ttPath = "http://localhost:2500/integration_iframe?custom_css_url=\(customCSSURL)&product=\(encodedProductURL!)"
+    // Prepare the checkout.
+    let parameters = [
+      "checkout_request": [
+        "public_token": "YOUR PUBLIC TOKEN",
+        "unique_token": "YOUR UNIQUE TOKEN",
+        "confirm": [
+          "method": "sms",
+          "sms_confirm_url": "http://YOUR_CONFIRM_URL"
+        ],
+        "products": [
+          [
+            "url": "http://www.nastygal.com/clothes-dresses/american-retro-mila-metallic-dress"
+          ]
+        ]
+      ]
+    ]
     
-    let ttURL = NSURL(string:ttPath)
-    let ttRequest = NSURLRequest(URL:ttURL!)
-    
-    self.ttWebView.loadRequest(ttRequest)
-    self.loadingIndicator.startAnimating()
+
+    Alamofire.request(.POST, "http://localhost:3000/prepare_checkout", parameters: parameters, encoding: .JSON)
+      .responseJSON { response in
+        
+        if let JSON = response.result.value {
+          
+          // Open the URL from the response.
+          let ttPath = JSON["url"] as! String
+          let ttURL = NSURL(string:ttPath)
+          let ttRequest = NSURLRequest(URL:ttURL!)
+          
+          self.ttWebView.loadRequest(ttRequest)
+          self.loadingIndicator.startAnimating()
+        }
+    }
   }
 
 
@@ -43,13 +66,12 @@ class BuyViewController: UIViewController, UIWebViewDelegate {
 
   
   func checkPostMessages() {
-    var error: NSError?
     let messagesJSON = self.ttWebView.stringByEvaluatingJavaScriptFromString("postMessagesJSON()")
     let messagesJSONData = messagesJSON!.dataUsingEncoding(NSASCIIStringEncoding, allowLossyConversion: false)
 
     let messagesArray = JSON(data: messagesJSONData!)
 
-    for (index: String, message: JSON) in messagesArray {
+    for (_, message): (String, JSON) in messagesArray {
       if message["action"] == "close_pressed" {
         self.closeModal()
       }
@@ -83,7 +105,7 @@ class BuyViewController: UIViewController, UIWebViewDelegate {
     var openInSafari = true
     
     for URL:String in localURLs {
-      if reqURL!.rangeOfString(URL) != nil {
+      if reqURL.rangeOfString(URL) != nil {
         openInSafari = false
       }
     }
