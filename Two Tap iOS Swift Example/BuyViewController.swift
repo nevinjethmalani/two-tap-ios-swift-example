@@ -41,7 +41,7 @@ class BuyViewController: UIViewController, UIWebViewDelegate {
     ]
     
 
-    Alamofire.request(.POST, "http://localhost:3000/prepare_checkout", parameters: parameters, encoding: .JSON)
+    Alamofire.request(.POST, "https://checkout.twotap.com/prepare_checkout", parameters: parameters, encoding: .JSON)
       .responseJSON { response in
         
         if let JSON = response.result.value {
