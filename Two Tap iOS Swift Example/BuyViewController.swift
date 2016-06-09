@@ -32,9 +32,10 @@ class BuyViewController: UIViewController, UIWebViewDelegate {
           "method": "sms",
           "sms_confirm_url": "http://YOUR_CONFIRM_URL"
         ],
+        "close_button": [ "show": "true" ],
         "products": [
           [
-            "url": "http://www.nastygal.com/clothes-dresses/american-retro-mila-metallic-dress"
+            "url": "https://www.jcrew.com/mens_category/polostees/shortsleevepolos/PRDOVR~93952/93952.jsp"
           ]
         ]
       ]
@@ -67,7 +68,7 @@ class BuyViewController: UIViewController, UIWebViewDelegate {
   
   func checkPostMessages() {
     let messagesJSON = self.ttWebView.stringByEvaluatingJavaScriptFromString("postMessagesJSON()")
-    let messagesJSONData = messagesJSON!.dataUsingEncoding(NSASCIIStringEncoding, allowLossyConversion: false)
+    let messagesJSONData = messagesJSON!.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
 
     let messagesArray = JSON(data: messagesJSONData!)
 

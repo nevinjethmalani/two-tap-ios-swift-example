@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvH-g0-a8n">
                                 <rect key="frame" x="275" y="285" width="50" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Tap me">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -29,7 +28,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="bvH-g0-a8n" secondAttribute="centerX" id="HIM-q8-3du"/>
@@ -43,7 +41,7 @@
         <!--Buy View Controller-->
         <scene sceneID="YHR-Od-daS">
             <objects>
-                <viewController id="6VD-dU-X9f" customClass="BuyViewController" customModule="Two_Tap_iOS_Swift_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="6VD-dU-X9f" customClass="BuyViewController" customModule="Two_Tap_iOS_Swift_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mv3-0x-PJx"/>
                         <viewControllerLayoutGuide type="bottom" id="LVA-E7-3Ma"/>
@@ -52,9 +50,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0N-Fn-yQC">
+                            <webView contentMode="center" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0N-Fn-yQC">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <dataDetectorType key="dataDetectorTypes"/>
                                 <connections>
@@ -63,20 +60,19 @@
                             </webView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="2os-XV-0Sf">
                                 <rect key="frame" x="290" y="290" width="20" height="20"/>
-                                <animations/>
                             </activityIndicatorView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2os-XV-0Sf" firstAttribute="centerY" secondItem="C0N-Fn-yQC" secondAttribute="centerY" id="0gR-sv-Zo8"/>
-                            <constraint firstItem="C0N-Fn-yQC" firstAttribute="top" secondItem="mv3-0x-PJx" secondAttribute="bottom" constant="-20" id="4As-GV-ZCM"/>
-                            <constraint firstItem="2os-XV-0Sf" firstAttribute="centerX" secondItem="C0N-Fn-yQC" secondAttribute="centerX" id="adG-n2-KUi"/>
-                            <constraint firstItem="C0N-Fn-yQC" firstAttribute="leading" secondItem="w5U-ra-eBz" secondAttribute="leadingMargin" constant="-16" id="g6v-mI-8jS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="C0N-Fn-yQC" secondAttribute="trailing" constant="-16" id="igz-KJ-HpN"/>
-                            <constraint firstItem="LVA-E7-3Ma" firstAttribute="top" secondItem="C0N-Fn-yQC" secondAttribute="bottom" id="pDZ-2z-XEs"/>
+                            <constraint firstItem="LVA-E7-3Ma" firstAttribute="top" secondItem="C0N-Fn-yQC" secondAttribute="bottom" id="Ohy-o3-vLC"/>
+                            <constraint firstItem="2os-XV-0Sf" firstAttribute="centerY" secondItem="w5U-ra-eBz" secondAttribute="centerY" id="QEA-qC-u3J"/>
+                            <constraint firstItem="2os-XV-0Sf" firstAttribute="centerX" secondItem="w5U-ra-eBz" secondAttribute="centerX" id="bBm-1Y-6IC"/>
+                            <constraint firstItem="C0N-Fn-yQC" firstAttribute="top" secondItem="mv3-0x-PJx" secondAttribute="bottom" id="nyf-ZV-ekX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C0N-Fn-yQC" secondAttribute="trailing" constant="-20" id="sGZ-QT-FZF"/>
+                            <constraint firstItem="C0N-Fn-yQC" firstAttribute="leading" secondItem="w5U-ra-eBz" secondAttribute="leadingMargin" constant="-20" id="tGK-H4-yPC"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="loadingIndicator" destination="2os-XV-0Sf" id="4Bs-ig-nhA"/>
                         <outlet property="ttWebView" destination="C0N-Fn-yQC" id="1gp-h5-uJF"/>
