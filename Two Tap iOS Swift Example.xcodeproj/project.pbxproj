@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		467B63BF3E4DEBC161D8973E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CD5EB6AF546E5306D3B6BE /* Pods.framework */; };
 		CF1ACE391BA91E74007C21EE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ACE381BA91E74007C21EE /* SwiftyJSON.swift */; };
 		CF382B921BA9132C006CD055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF382B911BA9132C006CD055 /* AppDelegate.swift */; };
 		CF382B941BA9132C006CD055 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF382B931BA9132C006CD055 /* StartViewController.swift */; };
@@ -16,6 +15,8 @@
 		CF382B9C1BA9132C006CD055 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF382B9A1BA9132C006CD055 /* LaunchScreen.xib */; };
 		CF382BA81BA9132C006CD055 /* Two_Tap_iOS_Swift_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF382BA71BA9132C006CD055 /* Two_Tap_iOS_Swift_ExampleTests.swift */; };
 		CF382BB21BA91389006CD055 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF382BB11BA91389006CD055 /* BuyViewController.swift */; };
+		D9B76CB002488EA46F0F03C8 /* Pods_Two_Tap_iOS_Swift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57F333BD88FCE2C9FD7A5D2 /* Pods_Two_Tap_iOS_Swift_Example.framework */; };
+		E6BC47D65F480A8A12BFA42C /* Pods_Two_Tap_iOS_Swift_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D507DC794B2F5B3F53B508 /* Pods_Two_Tap_iOS_Swift_ExampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,9 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25D507DC794B2F5B3F53B508 /* Pods_Two_Tap_iOS_Swift_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Two_Tap_iOS_Swift_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CD5EB6AF546E5306D3B6BE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CFD0DD51B5B2FAC1BECF0B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		A0D65C8806C8538CC9476AB6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		62069B029557E9B2A8EEF46C /* Pods-Two Tap iOS Swift ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Two Tap iOS Swift ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Two Tap iOS Swift ExampleTests/Pods-Two Tap iOS Swift ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A538DF3331829AC6519FC76A /* Pods-Two Tap iOS Swift Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Two Tap iOS Swift Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Two Tap iOS Swift Example/Pods-Two Tap iOS Swift Example.release.xcconfig"; sourceTree = "<group>"; };
+		ABE063DE0564FB90F8FCE230 /* Pods-Two Tap iOS Swift ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Two Tap iOS Swift ExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Two Tap iOS Swift ExampleTests/Pods-Two Tap iOS Swift ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		CF1ACE381BA91E74007C21EE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		CF382B8C1BA9132C006CD055 /* Two Tap iOS Swift Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Two Tap iOS Swift Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF382B901BA9132C006CD055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +47,8 @@
 		CF382BA61BA9132C006CD055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF382BA71BA9132C006CD055 /* Two_Tap_iOS_Swift_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Two_Tap_iOS_Swift_ExampleTests.swift; sourceTree = "<group>"; };
 		CF382BB11BA91389006CD055 /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		F57F333BD88FCE2C9FD7A5D2 /* Pods_Two_Tap_iOS_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Two_Tap_iOS_Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63C2ACDEA3731A2EAF69111 /* Pods-Two Tap iOS Swift Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Two Tap iOS Swift Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Two Tap iOS Swift Example/Pods-Two Tap iOS Swift Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				467B63BF3E4DEBC161D8973E /* Pods.framework in Frameworks */,
+				D9B76CB002488EA46F0F03C8 /* Pods_Two_Tap_iOS_Swift_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,27 +64,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BC47D65F480A8A12BFA42C /* Pods_Two_Tap_iOS_Swift_ExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54328175D4CECC07D3707906 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F63C2ACDEA3731A2EAF69111 /* Pods-Two Tap iOS Swift Example.debug.xcconfig */,
+				A538DF3331829AC6519FC76A /* Pods-Two Tap iOS Swift Example.release.xcconfig */,
+				62069B029557E9B2A8EEF46C /* Pods-Two Tap iOS Swift ExampleTests.debug.xcconfig */,
+				ABE063DE0564FB90F8FCE230 /* Pods-Two Tap iOS Swift ExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6B08C7924E4FC2DEB8E08975 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				33CD5EB6AF546E5306D3B6BE /* Pods.framework */,
+				F57F333BD88FCE2C9FD7A5D2 /* Pods_Two_Tap_iOS_Swift_Example.framework */,
+				25D507DC794B2F5B3F53B508 /* Pods_Two_Tap_iOS_Swift_ExampleTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B6854F8E506FDD760C4A215A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8CFD0DD51B5B2FAC1BECF0B2 /* Pods.debug.xcconfig */,
-				A0D65C8806C8538CC9476AB6 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF382B831BA9132C006CD055 = {
@@ -88,8 +98,8 @@
 				CF382B8E1BA9132C006CD055 /* Two Tap iOS Swift Example */,
 				CF382BA41BA9132C006CD055 /* Two Tap iOS Swift ExampleTests */,
 				CF382B8D1BA9132C006CD055 /* Products */,
-				B6854F8E506FDD760C4A215A /* Pods */,
 				6B08C7924E4FC2DEB8E08975 /* Frameworks */,
+				54328175D4CECC07D3707906 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,12 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF382BAB1BA9132D006CD055 /* Build configuration list for PBXNativeTarget "Two Tap iOS Swift Example" */;
 			buildPhases = (
-				071B83A1A000D5D73947CF11 /* Check Pods Manifest.lock */,
+				A1458224AFB6AC21E2E8BAB4 /* [CP] Check Pods Manifest.lock */,
 				CF382B881BA9132C006CD055 /* Sources */,
 				CF382B891BA9132C006CD055 /* Frameworks */,
 				CF382B8A1BA9132C006CD055 /* Resources */,
-				F16A3CB8123CD73C962BF893 /* Embed Pods Frameworks */,
-				9BDF113751B5B22A34466A54 /* Copy Pods Resources */,
+				AA66E4DD6CBCF229ED016CA6 /* [CP] Embed Pods Frameworks */,
+				172453AC3A9089F04A5B1F87 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF382BAE1BA9132D006CD055 /* Build configuration list for PBXNativeTarget "Two Tap iOS Swift ExampleTests" */;
 			buildPhases = (
+				E17D816CEC44C1D4373AE7C0 /* [CP] Check Pods Manifest.lock */,
 				CF382B9D1BA9132C006CD055 /* Sources */,
 				CF382B9E1BA9132C006CD055 /* Frameworks */,
 				CF382B9F1BA9132C006CD055 /* Resources */,
+				44090E416B9D7D0B075F5AC9 /* [CP] Embed Pods Frameworks */,
+				A4D75A918BECAE849D0CEA0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,9 +209,11 @@
 				TargetAttributes = {
 					CF382B8B1BA9132C006CD055 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0810;
 					};
 					CF382BA01BA9132C006CD055 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0810;
 						TestTargetID = CF382B8B1BA9132C006CD055;
 					};
 				};
@@ -243,49 +258,94 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		071B83A1A000D5D73947CF11 /* Check Pods Manifest.lock */ = {
+		172453AC3A9089F04A5B1F87 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Two Tap iOS Swift Example/Pods-Two Tap iOS Swift Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9BDF113751B5B22A34466A54 /* Copy Pods Resources */ = {
+		44090E416B9D7D0B075F5AC9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Two Tap iOS Swift ExampleTests/Pods-Two Tap iOS Swift ExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F16A3CB8123CD73C962BF893 /* Embed Pods Frameworks */ = {
+		A1458224AFB6AC21E2E8BAB4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4D75A918BECAE849D0CEA0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Two Tap iOS Swift ExampleTests/Pods-Two Tap iOS Swift ExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA66E4DD6CBCF229ED016CA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Two Tap iOS Swift Example/Pods-Two Tap iOS Swift Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E17D816CEC44C1D4373AE7C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -424,30 +484,33 @@
 		};
 		CF382BAC1BA9132D006CD055 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CFD0DD51B5B2FAC1BECF0B2 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F63C2ACDEA3731A2EAF69111 /* Pods-Two Tap iOS Swift Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Two Tap iOS Swift Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "twotap.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CF382BAD1BA9132D006CD055 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0D65C8806C8538CC9476AB6 /* Pods.release.xcconfig */;
+			baseConfigurationReference = A538DF3331829AC6519FC76A /* Pods-Two Tap iOS Swift Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Two Tap iOS Swift Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "twotap.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		CF382BAF1BA9132D006CD055 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62069B029557E9B2A8EEF46C /* Pods-Two Tap iOS Swift ExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -462,12 +525,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "twotap.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Two Tap iOS Swift Example.app/Two Tap iOS Swift Example";
 			};
 			name = Debug;
 		};
 		CF382BB01BA9132D006CD055 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABE063DE0564FB90F8FCE230 /* Pods-Two Tap iOS Swift ExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -478,6 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "twotap.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Two Tap iOS Swift Example.app/Two Tap iOS Swift Example";
 			};
 			name = Release;

@@ -17,14 +17,14 @@ class StartViewController: UIViewController {
 
   }
 
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "checkout" {
-      let viewController:BuyViewController = segue.destinationViewController as! BuyViewController
+      let viewController:BuyViewController = segue.destination as! BuyViewController
       viewController.productURL = "http://www.forever21.com/Product/Product.aspx?BR=f21&Category=sweater_sweatshirts-hoodies&ProductID=2000083990&VariantID=";
     }
   }
   
-  override func prefersStatusBarHidden() -> Bool {
+  override var prefersStatusBarHidden : Bool {
     return true;
   }
 }
